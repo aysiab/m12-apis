@@ -36,7 +36,8 @@ Director <- function(movies) {
 }
 
 # Call Director with your favorite movie, and assign it to the variable movie.director
-movie.director <- Director(movie.dataframe)
+Director(movie.dataframe)
+
 
 
 # Bonus #
