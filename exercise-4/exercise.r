@@ -30,10 +30,13 @@ movie.dataframe <- as.data.frame(movie.data)
 
 # Write a function called Director that accepts a data frame of movie info and returns
 # A vector of strings that states a movie and the director of said movie.
-
+Director <- function(movies) {
+  the.directors <- paste(movies$Title, "was directed by", movies$Director)
+  return(the.directors)
+}
 
 # Call Director with your favorite movie, and assign it to the variable movie.director
-
+movie.director <- Director("Up")
 
 
 # Bonus #
